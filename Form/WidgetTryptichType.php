@@ -1,6 +1,6 @@
 <?php
 
-namespace Victoire\Widget\TryptichBundle\Form;
+namespace Victoire\Widget\TriptychBundle\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -8,9 +8,9 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 /**
- * WidgetTryptich form type.
+ * WidgetTriptych form type.
  */
-class WidgetTryptichType extends WidgetType
+class WidgetTriptychType extends WidgetType
 {
     /**
      * define form fields.
@@ -23,19 +23,19 @@ class WidgetTryptichType extends WidgetType
     {
         $builder
             ->add('colLeft', ColType::class, array(
-                    'label' => 'widget_tryptich.form.colLeft.label',
+                    'label' => 'widget_triptych.form.colLeft.label',
             ))
             ->add('colMiddle', ColType::class, array(
-                    'label' => 'widget_tryptich.form.colMiddle.label',
+                    'label' => 'widget_triptych.form.colMiddle.label',
             ))
             ->add('colRight', ColType::class, array(
-                    'label' => 'widget_tryptich.form.colRight.label',
+                    'label' => 'widget_triptych.form.colRight.label',
             ));
         parent::buildForm($builder, $options);
     }
 
     /**
-     * bind form to WidgetTryptich entity.
+     * bind form to WidgetTriptych entity.
      *
      * @param OptionsResolverInterface $resolver
      */
@@ -44,8 +44,8 @@ class WidgetTryptichType extends WidgetType
         parent::configureOptions($resolver);
 
         $resolver->setDefaults(array(
-            'data_class' => 'Victoire\Widget\TryptichBundle\Entity\WidgetTryptich',
-            'widget' => 'Tryptich',
+            'data_class' => 'Victoire\Widget\TriptychBundle\Entity\WidgetTriptych',
+            'widget' => 'Triptych',
             'translation_domain' => 'victoire',
         ));
     }
@@ -57,6 +57,6 @@ class WidgetTryptichType extends WidgetType
      */
     public function getBlockPrefix()
     {
-        return 'victoire_widget_form_tryptich';
+        return 'victoire_widget_form_triptych';
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Victoire\Widget\TryptichBundle\Entity;
+namespace Victoire\Widget\TriptychBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

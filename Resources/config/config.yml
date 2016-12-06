@@ -1,11 +1,11 @@
 victoire_core:
     widgets:
-        Tryptich:
-            class: "Victoire\\Widget\\TryptichBundle\\Entity\\WidgetTryptich"
-            name: Tryptich
+        Triptych:
+            class: "Victoire\\Widget\\TriptychBundle\\Entity\\WidgetTriptych"
+            name: Triptych
             
 jms_translation:
     configs:
         victoire_tryptich_bundle:
-            dirs: ["@VictoireTryptichBundle"]
-            output_dir: "@VictoireTryptichBundle/Resources/translations"
+            dirs: ["@VictoireTriptychBundle"]
+            output_dir: "@VictoireTriptychBundle/Resources/translations"

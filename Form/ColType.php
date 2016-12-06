@@ -1,6 +1,6 @@
 <?php
 
-namespace Victoire\Widget\TryptichBundle\Form;
+namespace Victoire\Widget\TriptychBundle\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -19,16 +19,16 @@ class ColType extends WidgetType
     {
         $builder
             ->add('title', null, [
-                'label' => 'widget_tryptich.col.form.title.label',
+                'label' => 'widget_triptych.col.form.title.label',
             ])
             ->add('subTitle', null, [
-                'label' => 'widget_tryptich.col.form.subtitle.label',
+                'label' => 'widget_triptych.col.form.subtitle.label',
             ])
             ->add('background', MediaType::class, [
-                'label' => 'widget_tryptich.col.form.background.label',
+                'label' => 'widget_triptych.col.form.background.label',
             ])
             ->add('videoPreview', MediaType::class, [
-                'label' => 'widget_tryptich.col.form.video_preview.label',
+                'label' => 'widget_triptych.col.form.video_preview.label',
                 'required' => false
             ])
             ->add('link', LinkType::class)
@@ -50,6 +50,6 @@ class ColType extends WidgetType
      */
     public function getBlockPrefix()
     {
-        return 'victoire_widget_form_tryptich_col';
+        return 'victoire_widget_form_triptych_col';
     }
 }

@@ -1,36 +1,37 @@
 <?php
 
-namespace Victoire\Widget\TryptichBundle\Entity;
+namespace Victoire\Widget\TriptychBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
+use Victoire\Widget\TriptychBundle\Entity\Col;
 
 /**
- * WidgetTryptich.
+ * WidgetTriptych.
  *
  * @ORM\Table("vic_widget_tryptich")
  * @ORM\Entity
  */
-class WidgetTryptich extends Widget
+class WidgetTriptych extends Widget
 {
     /**
      * @var Col
      *
-     * @ORM\OneToOne(targetEntity="Victoire\Widget\TryptichBundle\Entity\Col", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Victoire\Widget\TriptychBundle\Entity\Col", cascade={"persist", "remove"})
      */
     protected $colLeft;
 
     /**
      * @var Col
      *
-     * @ORM\OneToOne(targetEntity="Victoire\Widget\TryptichBundle\Entity\Col", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Victoire\Widget\TriptychBundle\Entity\Col", cascade={"persist", "remove"})
      */
     protected $colMiddle;
 
     /**
      * @var Col
      *
-     * @ORM\OneToOne(targetEntity="Victoire\Widget\TryptichBundle\Entity\Col", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Victoire\Widget\TriptychBundle\Entity\Col", cascade={"persist", "remove"})
      */
     protected $colRight;
 
@@ -43,17 +44,17 @@ class WidgetTryptich extends Widget
      */
     public function __toString()
     {
-        return 'Tryptich #'.$this->id;
+        return 'Triptych #'.$this->id;
     }
 
     /**
      * Set colLeft.
      *
-     * @param \Victoire\Widget\TryptichBundle\Entity\Col $colLeft
+     * @param Col $colLeft
      *
-     * @return WidgetTryptich
+     * @return WidgetTriptych
      */
-    public function setColLeft(\Victoire\Widget\TryptichBundle\Entity\Col $colLeft = null)
+    public function setColLeft(Col $colLeft = null)
     {
         $this->colLeft = $colLeft;
 
@@ -63,7 +64,7 @@ class WidgetTryptich extends Widget
     /**
      * Get colLeft.
      *
-     * @return \Victoire\Widget\TryptichBundle\Entity\Col
+     * @return Col
      */
     public function getColLeft()
     {
@@ -73,11 +74,11 @@ class WidgetTryptich extends Widget
     /**
      * Set colMiddle.
      *
-     * @param \Victoire\Widget\TryptichBundle\Entity\Col $colMiddle
+     * @param Col $colMiddle
      *
-     * @return WidgetTryptich
+     * @return WidgetTriptych
      */
-    public function setColMiddle(\Victoire\Widget\TryptichBundle\Entity\Col $colMiddle = null)
+    public function setColMiddle(Col $colMiddle = null)
     {
         $this->colMiddle = $colMiddle;
 
@@ -87,7 +88,7 @@ class WidgetTryptich extends Widget
     /**
      * Get colMiddle.
      *
-     * @return \Victoire\Widget\TryptichBundle\Entity\Col
+     * @return Col
      */
     public function getColMiddle()
     {
@@ -97,11 +98,11 @@ class WidgetTryptich extends Widget
     /**
      * Set colRight.
      *
-     * @param \Victoire\Widget\TryptichBundle\Entity\Col $colRight
+     * @param Col $colRight
      *
-     * @return WidgetTryptich
+     * @return WidgetTriptych
      */
-    public function setColRight(\Victoire\Widget\TryptichBundle\Entity\Col $colRight = null)
+    public function setColRight(Col $colRight = null)
     {
         $this->colRight = $colRight;
 
@@ -111,7 +112,7 @@ class WidgetTryptich extends Widget
     /**
      * Get colRight.
      *
-     * @return \Victoire\Widget\TryptichBundle\Entity\Col
+     * @return Col
      */
     public function getColRight()
     {

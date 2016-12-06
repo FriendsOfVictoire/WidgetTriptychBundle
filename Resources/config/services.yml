@@ -1,20 +1,20 @@
 services:
-    victoire_core.widget_tryptich_content_resolver:
+    victoire_core.widget_triptych_content_resolver:
         parent: victoire_widget.base_widget_content_resolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Tryptich }
 
     #entity alias
-    victoire.widget.tryptich:
+    victoire.widget.triptych:
         class: Victoire\Widget\TryptichBundle\Entity\WidgetTryptich
 
     #form alias
-    victoire.widget.form.tryptich:
+    victoire.widget.form.triptych:
         class: Victoire\Widget\TryptichBundle\Form\WidgetTryptichType
         tags:
-            - { name: form.type , alias: victoire_widget_form_tryptich }
+            - { name: form.type , alias: victoire_widget_form_triptych }
 
-    victoire.widget.form.tryptich.col:
+    victoire.widget.form.triptych.col:
         class: Victoire\Widget\TryptichBundle\Form\ColType
         tags:
-            - { name: form.type , alias: victoire_widget_form_tryptich_col }
+            - { name: form.type , alias: victoire_widget_form_triptych_col }
