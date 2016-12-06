@@ -7,13 +7,13 @@
         "Victoire",
         "widget",
         "FriendsofVictoire",
-        "File"
+        "Triptych"
     ],
     "license": "MIT",
     "authors": [
         {
-            "name" : "Leny BERNARD",
-            "email": "leny@victoire.io"
+            "name" : "Charlie Lucas",
+            "email": "charlie@troopers.email"
         }
     ],
     "require": {
