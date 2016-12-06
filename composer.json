@@ -23,8 +23,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Victoire\\Widget\\FileBundle": ""
+            "Victoire\\Widget\\TriptychBundle": ""
         }
     },
-    "target-dir": "Victoire/Widget/FileBundle"
+    "target-dir": "Victoire/Widget/TriptychBundle"
 }
