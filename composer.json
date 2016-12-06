@@ -1,0 +1,31 @@
+{
+    "name": "friendsofvictoire/tryptich-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire DCMS Triptych widget",
+    "keywords": [
+        "DCMS",
+        "Victoire",
+        "widget",
+        "FriendsofVictoire",
+        "File"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name" : "Leny BERNARD",
+            "email": "leny@victoire.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/framework-bundle": "~2.8|~3.0",
+        "victoire/victoire": ">=2.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Victoire\\Widget\\FileBundle": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Victoire/Widget/FileBundle"
+}
