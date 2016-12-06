@@ -19,7 +19,7 @@ Declare your widget in your AppKernel:
         {
             $bundles = array(
                 ...
-                new Victoire\Widget\TriptychBundle\VictoireWidgetTryptichBundle(),
+                new Victoire\Widget\TriptychBundle\VictoireWidgetTriptychBundle(),
             );
 
             return $bundles;
