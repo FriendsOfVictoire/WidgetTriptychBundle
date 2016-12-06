@@ -26,6 +26,5 @@
             "Victoire\\Widget\\FileBundle": ""
         }
     },
-    "minimum-stability": "dev",
     "target-dir": "Victoire/Widget/FileBundle"
 }
