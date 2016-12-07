@@ -2,6 +2,8 @@
 
 namespace Victoire\Widget\TriptychBundle\Form;
 
+use Doctrine\ORM\EntityRepository;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -10,6 +12,7 @@ use Symfony\Component\Form\FormEvents;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Victoire\Bundle\BusinessPageBundle\Entity\BusinessTemplate;
 use Victoire\Bundle\CoreBundle\Form\EntityProxyFormType;
 use Victoire\Bundle\CoreBundle\Form\WidgetFieldsFormType;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
@@ -86,6 +89,18 @@ class WidgetTriptychType extends WidgetType
             'attr' => [
                 'data-refreshOnChange' => 'true',
             ],
+        ]);
+
+        $form->add('businessTemplate', EntityType::class, [
+            'class' => BusinessTemplate::class,
+            'query_builder' => function (EntityRepository $er) use($options) {
+                return $er->createQueryBuilder('bt')
+                    ->where('bt.businessEntityId = :businessEntity')
+                    ->setParameter(':businessEntity', $options['businessEntityId'])
+                    ->orderBy('bt.backendName', 'DESC');
+            },
+            'placeholder' => '',
+            'choice_label' => 'backendName'
         ]);
 
         $form->addEventListener(

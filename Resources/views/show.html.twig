@@ -8,8 +8,8 @@
         <h4 class="text-center">
             {{ col.subtitle }}
         </h4>
-        <a href="{{ vic_link_url(col.link.parameters) }}">
-            <img src="{{ asset(col.background.url) }}">
+        <a href="{{ col.link }}">
+            <img src="{{ asset(col.background.path) }}">
         </a>
     </div>
 {% endmacro %}
