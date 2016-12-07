@@ -8,18 +8,16 @@
         <h4 class="text-center">
             {{ col.subtitle }}
         </h4>
-        <a href="{{ vic_link_url(col.link.parameters) }}">
-            <img src="{{ asset(col.background.url) }}">
-        </a>
+        {#<a href="{{ vic_link_url(col.link.parameters) }}">#}
+            <img src="{{ asset(col.background.path) }}">
+        {#</a>#}
     </div>
 {% endmacro %}
 
 {% block content %}
 <div class="row">
-    {{ _self.tryptichCol(widget.colLeft) }}
-    {{ _self.tryptichCol(widget.colMiddle) }}
-    {{ _self.tryptichCol(widget.colRight) }}
+    {{ _self.tryptichCol(colLeft) }}
+    {{ _self.tryptichCol(colMiddle) }}
+    {{ _self.tryptichCol(colRight) }}
 </div>
-
-{# The parent display the content variable, you can do your custom display here #}
 {% endblock content %}
