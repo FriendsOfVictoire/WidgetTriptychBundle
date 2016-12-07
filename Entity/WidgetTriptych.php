@@ -65,6 +65,13 @@ class WidgetTriptych extends Widget
     protected $title;
 
     /**
+     * @var
+     *
+     * @ORM\OneToOne(targetEntity="Victoire\Bundle\BusinessPageBundle\Entity\BusinessTemplate")
+     */
+    private $businessTemplate;
+
+    /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
      * //TODO Check the generated value and make it more consistent.
@@ -227,6 +234,24 @@ class WidgetTriptych extends Widget
     public function setTitle($title)
     {
         $this->title = $title;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBusinessTemplate()
+    {
+        return $this->businessTemplate;
+    }
+
+    /**
+     * @param mixed $businessTemplate
+     * @return WidgetTriptych
+     */
+    public function setBusinessTemplate($businessTemplate)
+    {
+        $this->businessTemplate = $businessTemplate;
         return $this;
     }
 }

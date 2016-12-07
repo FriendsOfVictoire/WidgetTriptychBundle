@@ -2,6 +2,8 @@ services:
     victoire_core.widget_triptych_content_resolver:
         class: Victoire\Widget\TriptychBundle\Resolver\WidgetTriptychContentResolver
         parent: victoire_widget.base_widget_content_resolver
+        arguments:
+            - @victoire_widget.twig.link_extension
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Triptych }
 
