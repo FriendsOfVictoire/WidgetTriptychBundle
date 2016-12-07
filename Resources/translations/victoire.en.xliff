@@ -42,6 +42,18 @@
         <source>widget_triptych.col.form.video_preview.label</source>
         <target state="new">Video preview</target>
       </trans-unit>
+      <trans-unit id="10" resname="widget_triptych.form.background.label">
+        <source>widget_triptych.form.background.label</source>
+        <target>Background</target>
+      </trans-unit>
+      <trans-unit id="11" resname="widget_triptych.form.subtitle.label">
+        <source>widget_triptych.form.subtitle.label</source>
+        <target>Subtitle</target>
+      </trans-unit>
+      <trans-unit id="12" resname="widget_triptych.form.title.label">
+        <source>widget_triptych.form.title.label</source>
+        <target>Title</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
