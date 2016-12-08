@@ -6,6 +6,6 @@ victoire_core:
             
 jms_translation:
     configs:
-        victoire_tryptich_bundle:
+        victoire_triptych_bundle:
             dirs: ["@VictoireTriptychBundle"]
             output_dir: "@VictoireTriptychBundle/Resources/translations"

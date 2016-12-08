@@ -9,7 +9,7 @@ use Victoire\Widget\TriptychBundle\Entity\Col;
 /**
  * WidgetTriptych.
  *
- * @ORM\Table("vic_widget_tryptich")
+ * @ORM\Table("vic_widget_triptych")
  * @ORM\Entity
  */
 class WidgetTriptych extends Widget

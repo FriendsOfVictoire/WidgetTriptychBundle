@@ -41,7 +41,7 @@ class ColType extends WidgetType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Victoire\Widget\TryptichBundle\Entity\Col',
+            'data_class' => 'Victoire\Widget\TriptychBundle\Entity\Col',
         ));
     }
 

@@ -1,4 +1,4 @@
-Victoire CMS Tryptich Bundle
+Victoire CMS Triptych Bundle
 ============
 
 Need to add a triptych in a victoire cms website ?
@@ -19,7 +19,7 @@ Declare your widget in your AppKernel:
         {
             $bundles = array(
                 ...
-                new Victoire\Widget\TriptychBundle\VictoireWidgetTryptichBundle(),
+                new Victoire\Widget\TriptychBundle\VictoireWidgetTriptychBundle(),
             );
 
             return $bundles;
