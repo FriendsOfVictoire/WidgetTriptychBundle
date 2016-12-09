@@ -67,7 +67,7 @@ class WidgetTriptych extends Widget
     /**
      * @var
      *
-     * @ORM\OneToOne(targetEntity="Victoire\Bundle\BusinessPageBundle\Entity\BusinessTemplate")
+     * @ORM\ManyToOne(targetEntity="Victoire\Bundle\BusinessPageBundle\Entity\BusinessTemplate")
      */
     private $businessTemplate;
 

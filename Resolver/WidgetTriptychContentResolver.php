@@ -90,6 +90,7 @@ class WidgetTriptychContentResolver extends BaseWidgetContentResolver
             $parameters[$widgetField] = $attributeValue;
         }
 
+        $parameters['entity'] = $entity;
         $parameters['link'] = $this->linkExtension->victoireBusinessLink($entity, $widget->getBusinessTemplate()->getId());
 
         $widget->setEntity($entity);
